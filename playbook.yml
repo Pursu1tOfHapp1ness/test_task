@@ -1,0 +1,9 @@
+- hosts: jenkins-slave3
+  become: yes
+  roles:
+    - gerrit2
+
+
+  
+
+
