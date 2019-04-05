@@ -1,4 +1,4 @@
-- hosts: jenkins-slave3
+- hosts: gerrit-slave
   become: yes
   roles:
     - gerrit2
