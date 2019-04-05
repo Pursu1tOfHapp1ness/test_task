@@ -22,15 +22,15 @@
   become: yes
   listen: gerrit_tune
 
-- name: Set permissions on all repo to {{ gerrit_user }}
-  file:
-    path: /opt/gerrit
-    owner: "{{ gerrit2_user }}"
-    group: "{{ gerrit_group }}"
-    recurse: yes
-    state: directory
-  become: yes
-  listen: gerrit_tune
+#- name: Set permissions on all repo to {{ gerrit_user }}
+#  file:
+#    path: /opt/gerrit
+#    owner: "{{ gerrit2_user }}"
+#    group: "{{ gerrit_group }}"
+#    recurse: yes
+#    state: directory
+#  become: yes
+#  listen: gerrit_tune
 
 - name: Reindex gerrit
   shell: java -jar /opt/gerrit-2.16.7.war reindex -d /opt/gerrit
