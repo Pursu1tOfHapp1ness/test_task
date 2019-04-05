@@ -14,4 +14,5 @@ Vagrant.configure("2") do |config|
       ansible.inventory_path = "./inventory"
       ansible.limit = "all"
       end
+      end
 end

@@ -1,7 +1,7 @@
-[jenkins-slave3]
+[gerrit-slave]
 192.168.56.28
 
-[jenkins:vars]
+[gerrit-slave:vars]
 ansible_user = root
 ansible_ssh_pass = vagrant
 ansible_connection = paramiko
