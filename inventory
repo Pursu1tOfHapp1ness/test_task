@@ -1,5 +1,5 @@
 [gerrit-slave]
-192.168.56.28
+192.168.56.23
 
 [gerrit-slave:vars]
 ansible_user = root
